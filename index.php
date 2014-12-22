@@ -19,9 +19,9 @@ Read usage license on for this template on http://www.bootstraptor.com
 			<div class="container">
 				<div class="row">
 					<div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-						<h1>The Ivy Faculty Consortium</h1>
+						<h1>Ivy Faculty Consortium</h1>
 						<h2>Helping you become a better leader</h2>
-						<a class="btn btn-primary btn-lg" href="#">SIGN UP NOW</a>
+						<a class="btn btn-primary btn-lg" href="#">GET IN TOUCH</a>
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 	
 	<section class="content-box">
 		<div class="container">
-			<div class="row">
+			<div class="row fw-what-we-do">
 				
 				<a href="staff.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">

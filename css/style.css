@@ -38,9 +38,7 @@ Blue - #082f5d . RGB: 8,47,93
 
 /*-------------------------------- 2. LAYOUT ---------------------------------*/
 
-nav#topnav + section {
-    margin-top: 75px;
-}
+
 
 .fw-center-block {
     margin-left: auto;
@@ -67,6 +65,10 @@ section.custom-footer ul.list-unstyled li, section.custom-footer ul.list-unstyle
     padding-bottom: 10px;
 }
 
+.fw-what-we-do {
+    margin-top: 30px;
+}
+
 /*------------------------------ 3. TYPOGRAPHY -------------------------------*/
 
 body {
@@ -74,7 +76,7 @@ body {
     font-size: 18px;
 }
 
-#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup {
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup, #faculty .faculty {
     background-color: #082f5d;
 }
 #home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a {
