@@ -1,0 +1,208 @@
+/*--------------------------------- TOC --------------------------------------*/
+/*
+
+1. Color Scheme for use on site
+
+2. Fonts
+
+3. Typography
+
+4. Layout
+
+5. Forms
+
+6. Overriding Bootstrap defaults
+    6.1 Typography
+    6.2 Layout
+    6.3 Animation (incl hover/focus/active/visited states)
+
+7. Extending Font Awesome
+
+8. Animation (incl hover/focus/active/visited states)
+
+9. Media Queries
+
+*/
+
+/*---------------------------- 1. COLOR SCHEME -------------------------------*/
+
+/*
+
+Red - #990100 . RGB: 153,1,0
+
+Blue - #082f5d . RGB: 8,47,93
+
+
+
+*/
+
+/*-------------------------------- 2. LAYOUT ---------------------------------*/
+
+nav#topnav + section {
+    margin-top: 75px;
+}
+
+.fw-center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fw-margin-top-25 {
+    margin-top: 25px;
+}
+.fw-margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.fw-padding-bottom-25 {
+    padding-bottom: 25px;
+}
+
+section.content-box .container {
+    padding-top: 40px;
+}
+
+section.custom-footer ul.list-unstyled li, section.custom-footer ul.list-unstyled a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*------------------------------ 3. TYPOGRAPHY -------------------------------*/
+
+body {
+    color: #665555;
+    font-size: 18px;
+}
+
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup {
+    background-color: #082f5d;
+}
+#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a {
+    color: #fff;
+}
+
+section.content-box .container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.fw-featured {
+    color: #665555;
+    font-weight: 300;
+}
+
+.fw-featured-heading {
+    color: #428bca;
+}
+
+.fw-border-bottom-featured {
+    border-bottom: 10px solid #ccc;
+}
+
+section.custom-footer {
+    background-color: #082f5d;
+}
+
+/*------------------------ 6. OVERRIDING BOOTSTRAP ---------------------------*/
+
+/*----- 6.1 TYPOGRAPHY -----*/
+
+.jumbotron, .container .jumbotron {
+    background-image: url("../img/faculty/column_blurred.jpg");
+    background-size: cover;
+    background-position: 0 30%;
+    background-color: #082f5d;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #082f5d;
+}
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #082f5d;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #082f5d;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar, .navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: #082f5d;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #082f5d;
+}
+
+.btn.btn-primary {
+    background-color: #082f5d;
+}
+
+/*----- 6.2 LAYOUT -----*/
+
+button.navbar-toggle {
+    margin-top: 16px;
+    padding: 18px 20px;
+    border-radius: 0;
+}
+
+/*----- 6.3 ANIMATION -----*/
+
+.btn.btn-primary:hover {
+    color: #082f5d;
+    background-color: #fff;
+}
+
+.btn, .btn-large {
+    border-radius: 0;
+}
+
+/*------------------------------- 8. ANIMATION -------------------------------*/
+
+.fw-featured:hover {
+    color: #082f5d
+}
+
+.fw-featured:hover .fw-border-bottom-featured {
+    border-bottom: 10px solid #082f5d;
+}
+
+/*---------------------------- 9. MEDIA QUERIES ------------------------------*/
+
+@media (min-width: 768px) {
+    
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup {
+    background-color: #fff;
+    border-bottom: 5px solid #082f5d;
+}
+
+#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a {
+    color: #082f5d;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
+.fw-featured img {
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+.fw-featured:hover img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+}
