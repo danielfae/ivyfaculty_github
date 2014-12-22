@@ -20,7 +20,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 				<div class="row">
 					<div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 						<h1>The Ivy Faculty Consortium</h1>
-						<h2>Helping you become a better leader</h2>
+						<h2>Helping you become a better Negotiator</h2>
 						<a class="btn btn-primary btn-lg" href="#">SIGN UP NOW</a>
 					</div>
 				</div>
