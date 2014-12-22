@@ -37,8 +37,9 @@ Blue - #082f5d . RGB: 8,47,93
 */
 
 /*-------------------------------- 2. LAYOUT ---------------------------------*/
-
-
+body {
+    padding-top: 0;
+}
 
 .fw-center-block {
     margin-left: auto;
@@ -123,7 +124,7 @@ section.custom-footer {
 
 .navbar-inverse {
     background-color: #fff;
-    border-color: #082f5d;
+    border: none;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
