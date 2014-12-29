@@ -14,13 +14,14 @@ Read usage license on for this template on http://www.bootstraptor.com
 
 <?php include "includes/nav.php" ?>
 
-	<section>
-		<div class="jumbotron">
+	<section class="fw-margin-top-50-sm-up">
+		<div class="jumbotron" id="fw-jumbotron-main">
 			<div class="container">
 				<div class="row">
 					<div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-						<h1>Ivy Faculty Consortium</h1>
-						<h2>Helping you become a better leader</h2>
+						<img src="img/logo/ivyfacultylogo_2.png" class="img-responsive fw-block-center hidden-xs">
+						<h1 class="fw-title">Ivy Faculty Consortium</h1>
+						<h2 class="fw-subtitle">Helping you become a better leader</h2>
 						<a class="btn btn-primary btn-lg" href="#">GET IN TOUCH</a>
 					</div>
 				</div>
@@ -35,7 +36,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 				<a href="staff.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">
 					<!--<span class="flat-icon">F</span>-->
-					<img src="img/faculty/us.jpg" class="img-responsive fw-center-block">
+					<img src="img/faculty/us.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">Who we are</h3>
 					<p class="fw-padding-bottom-25 fw-border-bottom-featured">Experts teachers and speakers brought together from the world's best business schools.</p>
 				</div>
@@ -44,7 +45,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 				<a href="about.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">
 					<!--<span class="flat-icon">F</span>-->
-					<img src="img/faculty/yard.jpg" class="img-responsive fw-center-block">
+					<img src="img/faculty/yard.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">What we do</h3>
 					<p class="fw-padding-bottom-25 fw-border-bottom-featured">We provide webinars, executive briefings and education programs for organizations of any kind.</p>
 				</div>
@@ -53,7 +54,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 				<a href="blog.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">
 					<!--<span class="flat-icon">F</span>-->
-					<img src="img/faculty/fall_trees.jpg" class="img-responsive fw-center-block">
+					<img src="img/faculty/fall_trees.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">News & Knowledge</h3>
 					<p class="fw-padding-bottom-25 fw-border-bottom-featured">Get access to News, Free Lectures, Case Studies and Research of our faculty experts.</p>
 				</div>
