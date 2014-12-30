@@ -18,7 +18,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 		<div class="jumbotron" id="fw-jumbotron-main">
 			<div class="container">
 				<div class="row">
-					<div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<div class="text-center col-xs-12">
 						<img src="img/logo/ivyfacultylogo_2.png" class="img-responsive fw-block-center hidden-xs">
 						<h1 class="fw-title">Ivy Faculty Consortium</h1>
 						<h2 class="fw-subtitle">Helping you become a better leader</h2>
@@ -31,14 +31,14 @@ Read usage license on for this template on http://www.bootstraptor.com
 	
 	<section class="content-box">
 		<div class="container">
-			<div class="row fw-what-we-do">
-				
+			
+			<div class="row fw-what-we-do fw-bg-white fw-padding-top-100 fw-padding-bottom-100 fw-shadow-bottom fw-margin-bottom-30">
 				<a href="staff.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">
 					<!--<span class="flat-icon">F</span>-->
 					<img src="img/faculty/us.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">Who we are</h3>
-					<p class="fw-padding-bottom-25 fw-border-bottom-featured">Experts teachers and speakers brought together from the world's best business schools.</p>
+					<p class="fw-margin-bottom-0">Experts teachers and speakers brought together from the world's best business schools.</p>
 				</div>
 				</a>
 				
@@ -47,7 +47,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 					<!--<span class="flat-icon">F</span>-->
 					<img src="img/faculty/yard.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">What we do</h3>
-					<p class="fw-padding-bottom-25 fw-border-bottom-featured">We provide webinars, executive briefings and education programs for organizations of any kind.</p>
+					<p class="fw-margin-bottom-0">We provide webinars, executive briefings and education programs for organizations of any kind.</p>
 				</div>
 				</a>
 				
@@ -56,15 +56,14 @@ Read usage license on for this template on http://www.bootstraptor.com
 					<!--<span class="flat-icon">F</span>-->
 					<img src="img/faculty/fall_trees.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">News & Knowledge</h3>
-					<p class="fw-padding-bottom-25 fw-border-bottom-featured">Get access to News, Free Lectures, Case Studies and Research of our faculty experts.</p>
+					<p class="fw-margin-bottom-0">Get access to News, Free Lectures, Case Studies and Research of our faculty experts.</p>
 				</div>
 				</a>
-				
 			</div>
 
-			<hr />
 			
-			<div class="row">
+			
+			<div class="row fw-testimonials fw-padding-top-100 fw-padding-bottom-100 fw-shadow-bottom fw-margin-bottom-30">
 				<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header text-center">
 						<h3>
@@ -72,57 +71,87 @@ Read usage license on for this template on http://www.bootstraptor.com
 						</h3>
 					</div>
 				</div>-->
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a href="#">
-					<div class="panel panel-default">
+				
+				<div class="col-sm-6 fw-testimonial-single">
+					<!--<a href="" class="fw-link-unstyled">-->
+					<div class="panel panel-default fw-panel-popout fw-position-relative">
 						<div class="panel-body">
 							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-								<small>Someone famous in <cite>Source Title</cite></small>
+								<img src="img/faculty/us.jpg" class="fw-img-50p pull-right img-circle fw-margin-bottom-20 fw-margin-left-20">
+								<p class="fw-text-light-italic"><i class="fa fa-quote-left fa-2x pull-left fa-border fw-italic"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<small>Jenny Lastname, CEO <cite>Imaginative Manufacturing</cite></small>
+								<p class="fw-line-height-16 fw-margin-top-25">
+									Jenny works as a CEO at Imaginative Manufacturing. From August 2012 to January 2013 she took our course in management and leadership. Since then, Jenny can report on much happier co-workers. In addition, her business has increased its market share with over 30%!
+								</p>
+								<i class="fa fa-expand fw-btn-expand"></i>
 							</blockquote>
 						</div>
 					</div>
-					</a>
+					<!--</a>-->
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a href="#">
-					<div class="panel panel-default">
+				
+			<div class="col-sm-6"> <!-- added this in order to have three of the testimonials in a single column -->
+				
+				<div class="fw-testimonial-single fw-position-relative"> <!-- removed .col-sm-6 from this -->
+					<!--<a href="" class="fw-link-unstyled">-->
+					<div class="panel panel-default fw-panel-popout">
 						<div class="panel-body">
 							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<img src="img/faculty/us.jpg" class="fw-img-50p pull-right img-circle fw-margin-bottom-20 fw-margin-left-20">
+								<p class="fw-text-light-italic"><i class="fa fa-quote-left fa-2x pull-left fa-border fw-italic"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 								<small>Someone famous in <cite>Source Title</cite></small>
+								<p class="fw-line-height-16 fw-margin-top-25">
+									Jenny works as a CEO at Imaginative Manufacturing. From August 2012 to January 2013 she took our course in management and leadership. Since then, Jenny can report on much happier co-workers. In addition, her business has increased its market share with over 30%!
+								</p>
+								<i class="fa fa-expand fw-btn-expand"></i>
 							</blockquote>
 						</div>
 					</div>
-					</a>
+					<!--</a>-->
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a href="#">
-					<div class="panel panel-default">
+				
+				<div class="fw-testimonial-single fw-position-relative"> <!-- removed .col-sm-6 from this -->
+					<!--<a href="" class="fw-link-unstyled">-->
+					<div class="panel panel-default fw-panel-popout">
 						<div class="panel-body">
 							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<img src="img/faculty/us.jpg" class="fw-img-50p pull-right img-circle fw-margin-bottom-20 fw-margin-left-20">
+								<p class="fw-text-light-italic"><i class="fa fa-quote-left fa-2x pull-left fa-border fw-italic"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 								<small>Someone famous in <cite>Source Title</cite></small>
+								<p class="fw-line-height-16 fw-margin-top-25">
+									Jenny works as a CEO at Imaginative Manufacturing. From August 2012 to January 2013 she took our course in management and leadership. Since then, Jenny can report on much happier co-workers. In addition, her business has increased its market share with over 30%!
+								</p>
+								<i class="fa fa-expand fw-btn-expand"></i>
 							</blockquote>
 						</div>
 					</div>
-					</a>
+					<!--</a>-->
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-					<a href="#">
-					<div class="panel panel-default">
+				
+				<div class="fw-testimonial-single fw-position-relative"> <!-- removed .col-sm-6 from this -->
+					<!--<a href="" class="fw-link-unstyled">-->
+					<div class="panel panel-default fw-panel-popout">
 						<div class="panel-body">
 							<blockquote>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<img src="img/faculty/us.jpg" class="fw-img-50p pull-right img-circle fw-margin-bottom-20 fw-margin-left-20">
+								<p class="fw-text-light-italic"><i class="fa fa-quote-left fa-2x pull-left fa-border fw-italic"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 								<small>Someone famous in <cite>Source Title</cite></small>
+								<p class="fw-line-height-16 fw-margin-top-25">
+									Jenny works as a CEO at Imaginative Manufacturing. From August 2012 to January 2013 she took our course in management and leadership. Since then, Jenny can report on much happier co-workers. In addition, her business has increased its market share with over 30%!
+								</p>
+								<i class="fa fa-expand fw-btn-expand"></i>
 							</blockquote>
 						</div>
 					</div>
-					</a>
+					<!--</a>-->
 				</div>
+				
 			</div>
+				
+			</div>
+			
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-12">
 					<div class="well well-lg text-center">
 						<h3>Stay up to date on what we do</h3>
 						<a class="btn btn-lg btn-primary fw-margin-top-25 fw-margin-bottom-25" href="#">SUBSCRIBE TO OUR NEWSLETTER</a>

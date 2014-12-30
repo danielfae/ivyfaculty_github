@@ -7,7 +7,7 @@
     <!-- From theme --> <meta name="author" content="Ole Kristian Fjærestad (www.fjaerestad.no) & Daniel Arevalo">
         
     <!-- GOOGLE FONT-->
-    <!-- From theme --> <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- From theme --> <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
     <!-- /GOOGLE FONT-->
         
     <!--CSS-->
@@ -20,7 +20,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap_social_icons/bootstrap-social.css">
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css">-->
-    <link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.4.custom.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.4.custom.css">-->
     <link rel="stylesheet" type="text/css" href="css/font_awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--CSS end-->
@@ -32,10 +32,14 @@
     <![endif]-->
     
     <!--jQuery-->
-    <script src="js/jquery/jquery-1.10.2.js"></script>
+    <!--<script src="js/jquery/jquery-1.10.2.js"></script>-->
+	<!--<script src="http://code.jquery.com/jquery-1.8.2.js"></script>-->
+	<script src="js/jquery/jquery-1.11.1.min.js"></script>
     
     <!--jQuery UI-->
-    <script src="js/jquery/jquery-ui-1.10.4.custom.js"></script>
+    <!--<script src="js/jquery/jquery-ui-1.10.4.custom.js"></script>-->
+	<!--<script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>-->
+	<script src="js/jquery/jquery-ui-1.11.2.min.js"></script>
     
     <!--Bootstrap-->
     <!--<script src="js/bootstrap/bootstrap.js"></script>-->
