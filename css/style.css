@@ -106,6 +106,9 @@ body {
     margin-left: 20px;
 }
 
+.fw-padding-top-50 {
+    padding-top: 50px;
+}
 .fw-padding-top-100 {
     padding-top: 100px;
 }
@@ -114,6 +117,10 @@ body {
 }
 .fw-padding-bottom-100 {
     padding-bottom: 100px;
+}
+
+.fw-max-height-100 {
+    max-height: 100%;
 }
 
 .fw-img-50p {
@@ -141,7 +148,7 @@ body {
 }*/
 
 #fw-jumbotron-main .btn {
-    padding: 25px 50px;
+    padding: 20px 30px;
     margin-top: 70px;
 }
 
@@ -168,6 +175,12 @@ section.custom-footer ul.list-unstyled li, section.custom-footer ul.list-unstyle
 }
 
 .fw-testimonials .fw-btn-expand {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.fw-what-we-do .fw-btn-proceed {
     position: absolute;
     right: 10px;
     bottom: 10px;
@@ -203,6 +216,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: #eee;
 }
 
+.fw-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    z-index: 0;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+body.fw-testimonial-clicked .fw-overlay {
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+body.fw-navbar-clicked .fw-overlay {
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+}
+
+body.fw-testimonial-clicked .fw-testimonial-single-clicked {
+    z-index: 2;
+}
+
+.fw-testimonial-single.fw-testimonial-single-clicked .fw-panel-popout {
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
 .fw-shadow-bottom {
     box-shadow: 2px 2px 10px rgba(0,0,0,.3);
 }
@@ -214,11 +256,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     transition: color .2s;
 }
 
-#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup, #faculty .faculty {
-    background-color: #082f5d;
+/*-- Moved to media query max-width 767px --*/
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup, #faculty .faculty, #courses .courses {
+    /*background-color: #082f5d;*/
+    /*background-color: #eee;*/
 }
-#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a {
-    color: #fff;
+#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a, #faculty .faculty > a, #courses .courses > a {
+    /*color: #fff;*/
+    /*color: #082f5d;*/
+}
+
+.navbar-inverse .navbar-nav > li > a.fw-facebook:hover, .navbar-inverse .navbar-nav > li > a.fw-facebook:focus {
+    color: #3b5998;
+}
+.navbar-inverse .navbar-nav > li > a.fw-twitter:hover, .navbar-inverse .navbar-nav > li > a.fw-twitter:focus {
+    color: #55acee;
 }
 
 #fw-jumbotron-main {
@@ -230,12 +282,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/faculty/yellow_trees_blurred.jpg");
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/yellow_trees_blurred.jpg");*/
     /*background-image: url("../img/faculty/fall_ivy.jpg");*/
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/fall_ivy.jpg");
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/fall_ivy.jpg");
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/fall_ivy.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/fall_ivy.jpg");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/faculty/fall_ivy.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/faculty/fall_ivy.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/faculty/fall_ivy.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/faculty/fall_ivy.jpg");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/faculty/fall_ivy.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/faculty/fall_ivy.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/faculty/fall_ivy.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/faculty/fall_ivy.jpg");
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -257,7 +309,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #fw-jumbotron-main h2.fw-subtitle {
     font-family: Roboto-Light;
     font-size: 25px;
-    /*color: #ddd;*/
+    line-height: 1.4;
+    color: #eee;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
@@ -277,6 +333,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .fw-featured img {
     border-radius: 50%;
+}
+
+.fw-featured img {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
 }
 
 .fw-what-we-do h3.fw-featured-heading {
@@ -318,21 +379,36 @@ blockquote small {
     border-radius: 0;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #082f5d;
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+/*-- Moved to media query max-width 767px --*/
+/*.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}*/
+
 
 .navbar-inverse {
     background-color: #fff;
+    /*background-color: rgba(255,255,255,.9);*/
     border: none;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+}
+
+body.fw-scrolled-down .navbar-inverse {
+    background-color: rgba(255,255,255,0.9);
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: #082f5d;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background: #fff;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -345,11 +421,23 @@ blockquote small {
     background: -ms-linear-gradient(top,  #0c4587 0%,#082f5d 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #0c4587 0%,#082f5d 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c4587', endColorstr='#082f5d',GradientType=0 ); /* IE6-9 */
+    
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #082f5d;
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: #fff;
 }
+
+body.fw-scrolled-down .navbar-toggle {
+    opacity: .7;
+}
+
+/*-- Moved to media query min 768px --*/
+/*.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #082f5d;
+}*/
 
 .btn.btn-primary {
     /*background-color: #082f5d;*/
@@ -365,17 +453,15 @@ blockquote small {
     box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
 
+.btn-lg {
+    line-height: 1.6;
+}
+
 .panel {
     border-radius: 0;
 }
 
 /*----- 6.2 LAYOUT -----*/
-
-button.navbar-toggle {
-    margin-top: 16px;
-    padding: 18px 20px;
-    border-radius: 0;
-}
 
 .navbar .brand {
     margin-left: auto;
@@ -389,6 +475,8 @@ button.navbar-toggle {
     margin-bottom: -30px;
     position: relative;
     top: 10px;
+    -webkit-transition: -webkit-transform .2s, transform .2s;
+    transition: -webkit-transform .2s, transform .2s;
 }
 .navbar .navbar-brand {
     /*float: none;*/
@@ -402,7 +490,14 @@ button.navbar-toggle {
 }
 
 .navbar .navbar-toggle {
-    margin-right: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*margin-right: 30px;*/
+    padding: 18px 20px;
+    border-radius: 0;
+    margin: 0;
+    z-index: 3;
 }
 
 /*----- 6.3 ANIMATION -----*/
@@ -411,6 +506,11 @@ button.navbar-toggle {
     color: #082f5d;
     background-color: #fff;
 }*/
+
+.navbar .brand:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background: #0a3f77; /* Old browsers */
@@ -458,6 +558,14 @@ button.navbar-toggle {
     border-radius: 0;
 }
 
+/*------------------------ 7. EXTENDING FONT AWESOME -------------------------*/
+.fa-1p2x {
+    font-size: 1.2em;
+}
+.fa-1p4x {
+    font-size: 1.4em;
+}
+
 /*---------------------- 7. OVERRIDING THEME DEFAULTS ------------------------*/
 section.content-box .container {
     /*-webkit-box-shadow: 2px 5px 19px rgba(50, 50, 50, 0.5);
@@ -469,6 +577,17 @@ section.content-box .container {
 /*------------------------------- 8. ANIMATION -------------------------------*/
 .fw-featured:hover, .fw-featured:focus {
     color: #082f5d;
+}
+
+.fw-featured:hover img, .fw-featured:focus img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+    box-shadow: 2px 4px 8px rgba(0,0,0,.4);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /*.fw-featured:hover .fw-border-bottom-featured {
@@ -486,10 +605,6 @@ section.content-box .container {
     text-decoration: none;
 }
 
-.fw-testimonal-single-clicked {
-    position: relative;
-}
-
 .fw-testimonial-single:hover {
     cursor: pointer;
 }
@@ -500,16 +615,123 @@ section.content-box .container {
 }
 .fw-testimonial-single .fw-panel-popout:hover, .fw-testimonial-single .fw-panel-popout:focus {
     color: #082f5d;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
     box-shadow: 2px 2px 10px rgba(0,0,0,.3);
 }
 
 /*---------------------------- 9. MEDIA QUERIES ------------------------------*/
-@media (max-width: 437px) {
+@media (max-width: 338px) {
     
 #fw-jumbotron-main h1.fw-title {
+    font-size: 26px;
+}
+    
+}
+
+@media (max-width: 452px) {
+    
+/*#fw-jumbotron-main h1.fw-title {
     word-break: break-all;
+}*/
+
+#fw-jumbotron-main h1.fw-title .fw-break-consortium {
+    word-break: break-all;
+}
+    
+}
+
+@media (max-width: 767px) {
+    
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+    /*border-color: #082f5d;*/
+    /*background-color: #fff;*/
+    background-color: rgba(0,0,0,.8);
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup, #faculty .faculty, #courses .courses {
+    /*background-color: #082f5d;*/
+    /*background-color: #eee;*/
+    background-color: rgba(0,0,0,.5);
+    background-color: rgba(8,47,93,.5)
+}
+#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a, #faculty .faculty > a, #courses .courses > a {
+    /*color: #fff;*/
+    /*color: #082f5d;*/
+}
+    
+.fw-what-we-do img, .fw-what-we-do p, .fw-what-we-do h3.fw-featured-heading, .fw-featured {
+    float: left;
+}
+
+.fw-what-we-do .fw-featured {
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+}
+
+.fw-what-we-do {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.fw-what-we-do img {
+    max-width: 40%;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.fw-what-we-do p {
+    width: 40%;
+}
+
+.fw-what-we-do h3.fw-featured-heading {
+    width: 35%;
+    margin-top: 10px;
+}
+
+.fw-testimonials {
+    padding-top: 100px;
+}
+    
+}
+
+@media (min-width: 338px) {
+    
+.fw-hidden-338-up {
+    display: none;
+}
+    
+}
+
+@media (min-width: 420px) {
+    
+.fw-hidden-420-up {
+    display: none;
+}
+    
+}
+
+@media (min-width: 453px) {
+    
+.fw-hidden-453-up {
+    display: none;
 }
     
 }
@@ -527,6 +749,15 @@ section.content-box .container {
     padding-left: 0;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #082f5d;
+}
+
+.navbar-collapse li a.fw-social-icon {
+    padding-top: 11px;
+    padding-bottom: 14px;
+}
+
 .fw-margin-top-50-sm-up {
     margin-top: 50px;
 }
@@ -534,12 +765,12 @@ section.content-box .container {
     padding-left: 0;
 }
     
-#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup {
+#home .home, #about .about, #contact .contact, #blog .blog, #signup .signup, #faculty .faculty, #courses .courses {
     background-color: #eee;
     /*border-bottom: 5px solid #082f5d;*/
 }
 
-#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a {
+#home .home > a, #about .about > a, #contact .contact > a, #blog .blog > a, #signup .signup > a, #faculty .faculty > a, #courses .courses > a {
     color: #082f5d;
 }
 
@@ -555,18 +786,9 @@ section.content-box .container {
     filter: grayscale(80%);
     /*-webkit-transition: -webkit-filter .2s, -moz-filter .2s, -o-filter .2s, -ms-filter .2s, filter .2s, box-shadow .2s, -webkit-transform .2s, transform .2s;
     transition: -webkit-filter .2s, -moz-filter .2s, -o-filter .2s, -ms-filter .2s, filter .2s, box-shadow .2s, -webkit-transform .2s, transform .2s;*/
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    /*-webkit-transition: all .2s ease;
+    transition: all .2s ease;*/
 }
-.fw-featured:hover img {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    filter: grayscale(0%);
-    box-shadow: 2px 4px 8px rgba(0,0,0,.4);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
+
 
 }

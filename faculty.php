@@ -9,7 +9,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 <html lang="en">
 	<?php include "includes/head.php" ?>
 
-<body id="staff">
+<body id="faculty">
 <div class="wrap">
 
 <?php include "includes/nav.php" ?>

@@ -10,6 +10,9 @@ Read usage license on for this template on http://www.bootstraptor.com
 	<?php include "includes/head.php" ?>
 
 <body id="home">
+	
+<div class="fw-overlay"></div>
+	
 <div class="wrap">
 
 <?php include "includes/nav.php" ?>
@@ -20,8 +23,8 @@ Read usage license on for this template on http://www.bootstraptor.com
 				<div class="row">
 					<div class="text-center col-xs-12">
 						<img src="img/logo/ivyfacultylogo_2.png" class="img-responsive fw-block-center hidden-xs">
-						<h1 class="fw-title">Ivy Faculty Consortium</h1>
-						<h2 class="fw-subtitle">Helping you become a better leader</h2>
+						<h1 class="fw-title">Ivy <span class="fw-hidden-338-up"><br/></span>Faculty <span class="fw-hidden-453-up"><br/></span><span class="fw-break-consortium">Consortium</span></h1>
+						<h2 class="fw-subtitle">Helping you become a better leader through online programs and educational courses.</h2>
 						<a class="btn btn-primary btn-lg" href="#">GET IN TOUCH</a>
 					</div>
 				</div>
@@ -33,12 +36,13 @@ Read usage license on for this template on http://www.bootstraptor.com
 		<div class="container">
 			
 			<div class="row fw-what-we-do fw-bg-white fw-padding-top-100 fw-padding-bottom-100 fw-shadow-bottom fw-margin-bottom-30">
-				<a href="staff.php">
+				<a href="faculty.php">
 				<div class="col-xs-12 col-sm-4 fw-featured text-center">
 					<!--<span class="flat-icon">F</span>-->
 					<img src="img/faculty/us.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">Who we are</h3>
 					<p class="fw-margin-bottom-0">Experts teachers and speakers brought together from the world's best business schools.</p>
+					<i class="fa fa-arrow-right fw-btn-proceed fa-1p2x visible-xs"></i>
 				</div>
 				</a>
 				
@@ -48,6 +52,7 @@ Read usage license on for this template on http://www.bootstraptor.com
 					<img src="img/faculty/yard.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">What we do</h3>
 					<p class="fw-margin-bottom-0">We provide webinars, executive briefings and education programs for organizations of any kind.</p>
+					<i class="fa fa-arrow-right fw-btn-proceed fa-1p2x visible-xs"></i>
 				</div>
 				</a>
 				
@@ -56,14 +61,15 @@ Read usage license on for this template on http://www.bootstraptor.com
 					<!--<span class="flat-icon">F</span>-->
 					<img src="img/faculty/fall_trees.jpg" class="fw-img-responsive-60 fw-center-block">
 					<h3 class="fw-featured-heading">News & Knowledge</h3>
-					<p class="fw-margin-bottom-0">Get access to News, Free Lectures, Case Studies and Research of our faculty experts.</p>
+					<p class="fw-margin-bottom-0">Get access to news, free lectures, case studies and research by our faculty experts.</p>
+					<i class="fa fa-arrow-right fw-btn-proceed fa-1p2x visible-xs"></i>
 				</div>
 				</a>
 			</div>
 
 			
 			
-			<div class="row fw-testimonials fw-padding-top-100 fw-padding-bottom-100 fw-shadow-bottom fw-margin-bottom-30">
+			<div class="row fw-testimonials fw-padding-top-50 fw-padding-bottom-100 fw-shadow-bottom fw-margin-bottom-30">
 				<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header text-center">
 						<h3>
@@ -151,16 +157,16 @@ Read usage license on for this template on http://www.bootstraptor.com
 			</div>
 			
 			<div class="row">
-				<div class="col-xs-12">
-					<div class="well well-lg text-center">
-						<h3>Stay up to date on what we do</h3>
-						<a class="btn btn-lg btn-primary fw-margin-top-25 fw-margin-bottom-25" href="#">SUBSCRIBE TO OUR NEWSLETTER</a>
-					</div>
+				<div class="col-xs-12 text-center fw-padding-top-50 fw-padding-bottom-100">
+					<!--<div class="well well-lg text-center">
+						<h3>Stay up to date on what we do</h3>-->
+						<a class="btn btn-lg btn-primary fw-margin-top-25 fw-margin-bottom-25" href="#">SUBSCRIBE TO OUR <span class="fw-hidden-420-up"><br/></span>NEWSLETTER</a>
+					<!--</div>-->
 				</div>
 			</div>
 
 	</section>
-	<?php include "includes/footer.php" ?>
+	<?php /*include "includes/footer.php"*/ ?>
 </div>
 <!-- Le javascript
 ================================================== -->
